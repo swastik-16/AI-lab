@@ -1,4 +1,4 @@
-from pymaze import maze,agent,textLabel,COLOR
+from pymaze import maze,agent,COLOR
 
 def DFS(m,start=None):
     if start is None:

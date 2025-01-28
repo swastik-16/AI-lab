@@ -9,7 +9,6 @@ def BFS(m,start=None):
     bfsPath = {}
     explored = [start]
     bSearch=[]
-
     while len(frontier)>0:
         currCell=frontier.popleft()
         if currCell==m._goal:
@@ -30,7 +29,6 @@ def BFS(m,start=None):
                 explored.append(childCell)
                 bfsPath[childCell] = currCell
                 bSearch.append(childCell)
-    # print(f'{bfsPath}')
     fwdPath={}
     cell=m._goal
     while cell!=(m.rows,m.cols):
